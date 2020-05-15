@@ -2,8 +2,8 @@
 ## This is a complex number library written in Haskell
 
 # Why I wrote this? 
-## Practising Haskell (but I don't think this lib can trully improve my skill).
-## I need it.
+## 1, Practising Haskell (but I don't think this lib can trully improve my skill).
+## 2, I need it.
 
 # Who's this for? 
 ## It's mainly for myself, but you can report bugs. 
