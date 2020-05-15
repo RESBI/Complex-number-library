@@ -15,7 +15,8 @@
 # I provided two demos.
 ## One is simple calculate of complex number, it's "demo-test.hs"
 ## Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
-## to run then, just "ghci demo-whichYouWantToRun.hs"
+## How to run it? 
+### just "ghci demo-whichYouWantToRun.hs"
 
 # Todo: 
 ## Tons of todos here. 
