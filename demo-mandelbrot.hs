@@ -5,7 +5,9 @@ module Main where
 import ComplexNumber 
 
 main :: IO () 
-main = putStrLn $ foldl (++) "" [( if ( getEscape 21 ( double2CN 0 0 ) $ double2CN ( (/) ( fromInteger ( x - 20 ) ) 10 ) ( (/) ( fromInteger ( y - 20 ) ) 10 ) ) then "  " else "##" ) ++ ( if ( x == 40 ) then "\n" else "" ) | y <- [0..40], x <- [0..40]]
+--                                          Escaping radius                                               Wdith/2  scale                       Height/2  scale                                      Width                               Hieght        Width
+--                                                ↓                                                          ↓       ↓                             ↓       ↓                                          ↓                                   ↓             ↓
+main = putStrLn $ foldl (++) "" [( if ( getEscape 21 ( double2CN 0 0 ) $ double2CN ( (/) ( fromInteger ( x - 20 ) ) 10 ) ( (/) ( fromInteger ( y - 20 ) ) 10 ) ) then "  " else "##" ) ++ ( if ( x == 40 ) then "\n" else "" ) | y <- [0..40], x <- [0..40]] 
        where 
          getEscape 0    _ _     = False 
          getEscape temp c point = if ( ( normCN c ) >= 2 ) 
