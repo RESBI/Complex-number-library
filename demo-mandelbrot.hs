@@ -1,6 +1,6 @@
 -- ComplexNumber lib testing demo: mandelbrot. 
 -- 16/5/2020 Resbi 
-module ComplexNumberTestTwo where 
+module Main where 
 
 import ComplexNumber 
 

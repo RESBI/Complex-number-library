@@ -1,6 +1,6 @@
 -- ComplexNumber lib testing demo : simple calculating. 
 -- 15/5/2020 Resbi 
-module ComplexNumberTestOne where 
+module Main where 
 
 import ComplexNumber 
 
