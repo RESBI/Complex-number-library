@@ -47,3 +47,16 @@ dotproductVec a b = foldr (+) 0 ( component $ doOperationToEachComponentBetweenT
 normVec :: Vector -> Double 
 normVec a = sqrt $ foldr ((+).(**2)) 0 ( component a ) 
 
+-- Get cos of the included angle between two vectors. 
+-- getcosVec(a, b) = dotproductVec(a, b) / (normVec(a) * normVec(b)) 
+getcosVec :: Vector -> Vector -> Double 
+getcosVec a b = ( dotproductVec a b ) / ( ( normVec a ) * ( normVec b ) ) 
+
+-- Judge if two vector are parallel. 
+-- If it is, return True, else return False. 
+-- ifparallelVec(a, b) := if ( abs(getcosVec(a, b)) == 1 ) 
+--                        then True 
+--                        else False 
+ifparallelVec :: Vector -> Vector -> Bool 
+ifparallelVec a b = ( ( abs ( getcosVec a b ) ) == 1 ) 
+

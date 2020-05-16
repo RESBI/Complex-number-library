@@ -49,7 +49,9 @@
 --                    subVec, 
 --                    normVec, 
 --                    dotproductVec, 
---                    oppositeVec 
+--                    oppositeVec, 
+--                    getcosVec, 
+--                    ifparallelVec 
 --            ExtraMath: 
 --                    cn2Vec 
 
