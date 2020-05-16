@@ -53,18 +53,26 @@
 --                    getcosVec, 
 --                    ifparallelVec 
 --            ExtraMath: 
---                    cn2Vec 
+--                    cn2Vec, 
+--                    vec2CN 
 
 module ExtraMath ( 
   module ComplexNumber, 
   module Vector 
 ) where 
 
+import Debug.Trace
+
 import ComplexNumber 
 import Vector 
 
---vec2CN :: Vector -> ComplexNumber 
+-- Transfor a 2D vector to a normal complex number. 
+vec2CN :: Vector -> ComplexNumber 
+vec2CN a = if ( ( dimention a ) /= 2 ) 
+           then ( trace ( " [Error: Vector dimention error] \n\tmodule: ExtraMath \n\tfunctuon: vec2CN \n\tdimention dosen't match: " ++ ( show $ dimention a ) ++ " with 2. " ) ( double2CN 0 0 ) ) 
+           else ( double2CN ( ( component a ) !! 0 ) ( ( component a ) !! 1 ) ) 
 
--- transfor a normal complex number to a 2D vector. 
+-- Transfor a normal complex number to a 2D vector. 
 cn2Vec :: ComplexNumber -> Vector 
 cn2Vec a = Vector 2 [real a, imag a] 
+
