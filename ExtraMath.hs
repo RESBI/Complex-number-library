@@ -10,7 +10,7 @@
 --      [ 15/05/2020 ] add ComplexNumber submodule. 
 --      [ 16/05/2020 ] add exp-type complex number and operating functions for ComplexNumber submodule. 
 --    16/05/2020: 
---      [ 16/05/2020 ] Vector lib. 
+--      [ 16/05/2020 ] add Vector lib. 
 --
 -- Changes: 
 --    15/05/2020 
