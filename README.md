@@ -10,7 +10,9 @@
 
 # How to use it?
 ### Just import ExtraMath. 
-### If you're looking for the introductions of functions in this lib, look at the source code.
+
+# Introductions
+### What are you talking about? Read the source code! 
 
 # I provided some demos.
 ### Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
