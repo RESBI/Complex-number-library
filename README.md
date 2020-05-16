@@ -19,7 +19,7 @@
 ### One is a test file, which tested complex number operating functions.
 ### Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
 ### How to run it? 
-#### just "ghci demo-whichYouWantToRun.hs", and then run the "main" function.
+#### just "ghci -i..\ demo-whichYouWantToRun.hs", and then run the "main" function.
 
 # Todo: 
 ### Tons of todos here. 
