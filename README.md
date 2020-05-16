@@ -1,5 +1,5 @@
 # What's this? 
-### ..This is a complex number library written in Haskell
+### This is a complex number library written in Haskell
 
 # Why I wrote this? 
 ### 1, Practising Haskell (but I don't think this lib can trully improve my skill).
