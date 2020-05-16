@@ -13,6 +13,7 @@
 
 # Introductions
 ### What are you talking about? Read the source code! 
+### Thay are all in the comments, I described every functions. 
 
 # I provided some demos.
 ### Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
