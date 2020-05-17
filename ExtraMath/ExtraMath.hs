@@ -29,7 +29,7 @@
 --                    showCN 
 --    16/05/2020 
 --        change: 
---            restructed the whole library. 
+--            restructured the whole library. 
 --        add: 
 --            ComplexNumber: 
 --                functions: 
@@ -60,7 +60,7 @@
 --                    vec2CN 
 --    17/05/2020 
 --        change: 
---            restructed the whole library. 
+--            restructured the whole library. 
 
 module ExtraMath.ExtraMath ( 
   module ExtraMath.Submodules.ComplexNumber, 
