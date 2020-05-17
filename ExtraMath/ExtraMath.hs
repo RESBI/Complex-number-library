@@ -76,7 +76,7 @@ import ExtraMath.Submodules.Vector
 vec2CN :: Vector -> ComplexNumber 
 vec2CN a = if ( ( dimention a ) /= 2 ) 
            then ( trace ( " [Error: Vector dimention error] \n\tmodule: ExtraMath \n\tfunctuon: vec2CN \n\tdimention dosen't match: " ++ ( show $ dimention a ) ++ " with 2. " ) ( double2CN 0 0 ) ) 
-           else ( double2CN ( ( component a ) !! 0 ) ( ( component a ) !! 1 ) ) 
+           else ( ComplexNumber ( ( component a ) !! 0 ) ( ( component a ) !! 1 ) ) 
 
 -- Transfor a normal complex number to a 2D vector. 
 cn2Vec :: ComplexNumber -> Vector 
