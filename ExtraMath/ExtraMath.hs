@@ -61,16 +61,23 @@
 --    17/05/2020 
 --        change: 
 --            restructured the whole library. 
+--        add: 
+--            Vector: 
+--                    showVec, 
+--                    getangleVec 
+--        delete: 
+--            Vector: 
+--                    ifparallelVec 
 
 module ExtraMath.ExtraMath ( 
   module ExtraMath.Submodules.ComplexNumber, 
   module ExtraMath.Submodules.Vector 
 ) where 
 
-import Debug.Trace
+import Debug.Trace 
 
 import ExtraMath.Submodules.ComplexNumber 
-import ExtraMath.Submodules.Vector  
+import ExtraMath.Submodules.Vector 
 
 -- Transfor a 2D vector to a normal complex number. 
 vec2CN :: Vector -> ComplexNumber 

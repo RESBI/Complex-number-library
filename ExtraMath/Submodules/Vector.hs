@@ -15,7 +15,7 @@ data Vector = Vector {
 -- dOTECBTV(func, a, b) = func(a, b) 
 doOperationToEachComponentBetweenTwoVectors :: (Double -> Double -> Double) -> Vector -> Vector -> Vector 
 doOperationToEachComponentBetweenTwoVectors func a b = if ( ( dimention a ) /= ( dimention b ) ) 
-                                      then ( trace ( " [Error: Vector dimention error] \n\tmodule: Vector \n\tfunction: dOTECBTV \n\tdimention doesn't match: " ++ ( show $ dimention a ) ++ " with " ++ ( show $ dimention b ) ) ( Vector 0 [] ) ) 
+                                      then ( trace ( " [Error: Vector dimention error] \n\tmodule: Vector \n\tfunction: doOperationToEachComponentBetweenTwoVectors \n\tdimention doesn't match: " ++ ( show $ dimention a ) ++ " with " ++ ( show $ dimention b ) ) ( Vector 0 [] ) ) 
                                       else ( Vector ( dimention a ) [(func) ( ( component a ) !! index ) ( ( component b ) !! index ) | index <- [0..( ( dimention a ) - 1 )]] ) 
 
 -- Do operation to each component in one vector. 
@@ -52,10 +52,25 @@ normVec a = sqrt $ foldr ((+).(**2)) 0 ( component a )
 getcosVec :: Vector -> Vector -> Double 
 getcosVec a b = ( dotproductVec a b ) / ( ( normVec a ) * ( normVec b ) ) 
 
+-- Get the included angle(radian) between two vectors. 
+-- getangleVec(a, b) := acos(getcosVec(a, b)) 
+--                    = <a, b> 
+getangleVec :: Vector -> Vector -> Double 
+getangleVec a b = acos $ getcosVec a b 
+
 -- Judge if two vector are parallel. 
 -- If it is, return True, else return False. 
 -- ifparallelVec(a, b) := if ( abs(getcosVec(a, b)) == 1 ) 
 --                        then True 
 --                        else False 
-ifparallelVec :: Vector -> Vector -> Bool 
-ifparallelVec a b = ( ( abs ( getcosVec a b ) ) == 1 ) 
+-- Deleted at 17/05/2020 
+--   reason: dosen't accurate enouth. 
+--   E.g. [1.5, 2.3, 3.6] // [3.0 4.6 7.2] => False 
+--ifparallelVec :: Vector -> Vector -> Bool 
+--ifparallelVec a b = ( ( abs ( getcosVec a b ) ) == 1 ) 
+
+-- Show a vector. 
+-- Show it's components. 
+showVec :: Vector -> String 
+showVec a = show ( component a ) 
+
