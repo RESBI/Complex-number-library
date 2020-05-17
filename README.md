@@ -18,8 +18,8 @@
 ### Thay are all in the comments, I described every functions. 
 
 # I provided some demos.
-### One is a test file, which tested complex number operating functions.
-### Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
+### One is a test file, which tested the operating functions.
+### Another one is drawing a Mandelbrot set. 
 ### How to run it? 
 #### just "ghci -i.\ demo-mandelbrot.hs", and then run the "main" function.
 
