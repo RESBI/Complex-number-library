@@ -9,7 +9,9 @@
 ### It's mainly for myself, but you can report bugs. 
 
 # How to use it?
-### Just import ExtraMath. 
+### Put you what.hs file at this directory. 
+### And then import ExtraMath.ExtraMath in your code.
+### Don't forget to add "-i.\" option when you running "ghc" or "ghci -i.\ what.hs".  
 
 # Introductions
 ### What are you talking about? Read the source code! 
@@ -19,7 +21,7 @@
 ### One is a test file, which tested complex number operating functions.
 ### Another one is drawing a Mandelbrot set, it's "demo-mandelbrot.hs". 
 ### How to run it? 
-#### just "ghci -i.. demo-whichYouWantToRun.hs", and then run the "main" function.
+#### just "ghci -i.\ demo-mandelbrot.hs", and then run the "main" function.
 
 # Todo: 
 ### Tons of todos here. 
