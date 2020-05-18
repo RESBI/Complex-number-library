@@ -8,15 +8,17 @@ e :: Double
 e = 2.71828182845904523536028747135266249775724709369995 
 
 -- Defining complex number data type. 
-data ComplexNumber = ComplexNumber {
-     real :: Double, 
-     imag :: Double
-} deriving (Show) 
+data ComplexNumber = ComplexNumber { 
+                                    real :: Double, 
+                                    imag :: Double
+                                   }
+                     deriving (Show) 
 
 data ExponentialComplexNumber = ExponentialComplexNumber {
-     radius :: Double, 
-     radian :: Double -- Actually, I want to use "degree" here instead of "radian". 
-} deriving (Show) 
+                                                          radius :: Double, 
+                                                          radian :: Double -- Actually, I want to use "degree" here instead of "radian". 
+                                                         }
+                                deriving (Show) 
 
 -- Get radian of vector (a, b). 
 -- getRadian(a, b) = if b >= 0 

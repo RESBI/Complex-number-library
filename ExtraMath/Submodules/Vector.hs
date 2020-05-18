@@ -6,9 +6,10 @@ module ExtraMath.Submodules.Vector where
 import Debug.Trace 
 
 data Vector = Vector { 
-     dimention :: Int, 
-     component :: [Double] 
-} deriving (Show) 
+                      dimention :: Int, 
+                      component :: [Double] 
+                     }
+              deriving (Show) 
 
 -- Do operation to each component between two vectors. 
 -- "dOTECBTV" stand for it. 

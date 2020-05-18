@@ -12,6 +12,9 @@
 --    16/05/2020: 
 --      [ 16/05/2020 ] Vector lib. 
 --      [            ] LinearAlgebra lib. 
+--    18/05/2020: 
+--      [            ] Numerical set lib. 
+--      [            ] Geometry lib. 
 --
 -- Changes: 
 --    15/05/2020 
@@ -70,9 +73,12 @@
 --                    ifparallelVec 
 
 module ExtraMath.ExtraMath ( 
-  module ExtraMath.Submodules.ComplexNumber, 
-  module ExtraMath.Submodules.Vector 
-) where 
+                            module ExtraMath.Submodules.ComplexNumber, 
+                            module ExtraMath.Submodules.Vector --, 
+                            --module ExtraMath.Submodules.NumSet, 
+                            --module ExtraMath.Submodules.Geometry, 
+                            --module ExtraMath.Submodules.FracNum 
+                           ) where 
 
 import Debug.Trace 
 

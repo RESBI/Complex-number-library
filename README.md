@@ -1,6 +1,10 @@
 # What's this? 
 ### This is an extra mathematical operating functions library written in Haskell
 
+# What can this do? 
+### Complex number operating, 
+### Vector operating, 
+
 # Why I wrote this? 
 ### 1, Practising Haskell (but I don't think this lib can trully improve my skill).
 ### 2, I need it.
