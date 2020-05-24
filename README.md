@@ -22,9 +22,10 @@
 ### Thay are all in the comments, I described every functions. 
 
 # I provided some demos.
-### One is a test file, which tested the operating functions.
-### Another one is drawing a Mandelbrot set. 
-### How to run it? 
+### "demo-mandelbrot.hs"  : Draw a image of mandelbrot set, testing complex number operating functions. 
+### "demo-test.hs"        : Test operating functions. 
+### "demo-bezierCurve.hs" : Draw a image of bezier curve, testing vector operating functions. 
+##  How to run it? 
 #### just "ghci -i.\ demo-mandelbrot.hs", and then run the "main" function.
 
 # Todo: 
